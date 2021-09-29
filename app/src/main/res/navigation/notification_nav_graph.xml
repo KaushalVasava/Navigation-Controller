@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_nav_graph"
+    app:startDestination="@id/notificationsFragment2">
+
+    <fragment
+        android:id="@+id/notificationsFragment2"
+        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Notification.NotificationsFragment2"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications"/>
+</navigation>

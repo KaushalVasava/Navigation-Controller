@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_chooseReceiverFragment"
+            app:destination="@id/chooseReceiverFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ViewBalanceFragment"
+        android:label="View Balance"
+        tools:layout="@layout/fragment_view_balance" />
+    <fragment
+        android:id="@+id/viewTransactionFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ViewTransactionFragment"
+        android:label="Transaction"
+        tools:layout="@layout/fragment_view_transaction" />
+    <fragment
+        android:id="@+id/chooseReceiverFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ChooseReceiverFragment"
+        android:label="Send Cash to receiver"
+        tools:layout="@layout/fragment_choose_receiver" >
+        <action
+            android:id="@+id/action_chooseReceiverFragment_to_sendCashFragment"
+            app:destination="@id/sendCashFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/sendCashFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.SendCashFragment"
+        android:label="Send Cash to {receiverName}"
+        tools:layout="@layout/fragment_send_cash">
+        <action
+            android:id="@+id/action_sendCashFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_sendCashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="receiverName"
+            app:argType="string" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.navigationcomponent.com/{receiverName}" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" >
+        <argument
+            android:name="receiverName"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="long" />
+    </dialog>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.AboutAppFragment"
+        android:label="AboutApp" />
+    <action android:id="@+id/action_global_aboutAppFragment" app:destination="@id/aboutAppFragment" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.lasuak.navigationcontroller.Project1.Fragments.NotificationsFragment"
+        android:label="Notifications" />
+
+</navigation>
