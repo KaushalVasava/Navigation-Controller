@@ -3,7 +3,7 @@
 package="com.lasuak.navigationcontroller">
 
 <application
-    android:name=".Project1.App"
+    android:name=".project1.App"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -11,18 +11,18 @@ package="com.lasuak.navigationcontroller">
     android:supportsRtl="true"
     android:theme="@style/Theme.NavigationController">
     <activity
-        android:name=".Project1.activity.MainActivity"
+        android:name=".project1.activity.MainActivity"
         android:exported="true">
 
         <nav-graph android:value="@navigation/main_nav_graph" />
     </activity>
     <activity
-        android:name=".Project2.MainActivity2"
+        android:name=".project2.MainActivity2"
         android:exported="true">
         <nav-graph android:value="@navigation/main_nav_graph2" />
     </activity>
     <activity
-        android:name=".Project3.MainActivity3"
+        android:name=".project3.MainActivity3"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/settingsFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Settings.SettingsFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Settings.SettingsFragment2"
         android:label="Settings"
         tools:layout="@layout/fragment_settings">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutAppFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Settings.AboutAppFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Settings.AboutAppFragment2"
         android:label="About"
         tools:layout="@layout/fragment_about_app"/>
 </navigation>

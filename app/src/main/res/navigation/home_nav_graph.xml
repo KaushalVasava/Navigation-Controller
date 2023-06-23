@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.HomeFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.HomeFragment2"
         android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
@@ -37,17 +37,17 @@
     </fragment>
     <fragment
         android:id="@+id/viewBalanceFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.ViewBalanceFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.ViewBalanceFragment2"
         android:label="ViewBalance"
         tools:layout="@layout/fragment_view_balance" />
     <fragment
         android:id="@+id/viewTransactionFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.ViewTransactionFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.ViewTransactionFragment2"
         android:label="ViewTransaction"
         tools:layout="@layout/fragment_view_transaction" />
     <fragment
         android:id="@+id/chooseReceiverFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.ChooseReceiverFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.ChooseReceiverFragment2"
         android:label="ChooseReceiver"
         tools:layout="@layout/fragment_choose_receiver">
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendCashFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.SendCashFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.SendCashFragment2"
         android:label="SendCash"
         tools:layout="@layout/fragment_send_cash">
         <action
@@ -89,7 +89,7 @@
     </fragment>
     <dialog
         android:id="@+id/dialogFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Home.DialogFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Home.DialogFragment2"
         android:label="DialogFragment"
         tools:layout="@layout/fragment_dialog">
         <argument

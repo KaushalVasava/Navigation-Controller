@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/notificationsFragment2"
-        android:name="com.lasuak.navigationcontroller.Project3.Fragments.Notification.NotificationsFragment2"
+        android:name="com.lasuak.navigationcontroller.project3.Fragments.Notification.NotificationsFragment2"
         android:label="Notifications"
         tools:layout="@layout/fragment_notifications"/>
 </navigation>
