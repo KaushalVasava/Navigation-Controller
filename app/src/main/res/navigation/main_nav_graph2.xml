@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.lasuak.navigationcontroller.Project2.MainFragment"
+        android:name="com.lasuak.navigationcontroller.project2.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main">
         <action
@@ -20,11 +20,11 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.lasuak.navigationcontroller.Project2.LoginFragment"
+        android:name="com.lasuak.navigationcontroller.project2.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login"/>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.lasuak.navigationcontroller.Project2.ProfileFragment"
+        android:name="com.lasuak.navigationcontroller.project2.ProfileFragment"
         android:label="ProfileFragment" />
 </navigation>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Project1.Project1.Fragments.SendCashFragment">
+    tools:context=".project1.Project1.Fragments.SendCashFragment">
 
     <TextView
         android:id="@+id/receiver_name"

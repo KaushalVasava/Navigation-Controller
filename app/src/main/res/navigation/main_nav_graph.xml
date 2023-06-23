@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.HomeFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home">
         <action
@@ -34,17 +34,17 @@
     </fragment>
     <fragment
         android:id="@+id/viewBalanceFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ViewBalanceFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.ViewBalanceFragment"
         android:label="View Balance"
         tools:layout="@layout/fragment_view_balance" />
     <fragment
         android:id="@+id/viewTransactionFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ViewTransactionFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.ViewTransactionFragment"
         android:label="Transaction"
         tools:layout="@layout/fragment_view_transaction" />
     <fragment
         android:id="@+id/chooseReceiverFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.ChooseReceiverFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.ChooseReceiverFragment"
         android:label="Send Cash to receiver"
         tools:layout="@layout/fragment_choose_receiver" >
         <action
@@ -57,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendCashFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.SendCashFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.SendCashFragment"
         android:label="Send Cash to {receiverName}"
         tools:layout="@layout/fragment_send_cash">
         <action
@@ -85,7 +85,7 @@
     </fragment>
     <dialog
         android:id="@+id/dialogFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.DialogFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.DialogFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_dialog" >
         <argument
@@ -97,17 +97,17 @@
     </dialog>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.SettingsFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/aboutAppFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.AboutAppFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.AboutAppFragment"
         android:label="AboutApp" />
     <action android:id="@+id/action_global_aboutAppFragment" app:destination="@id/aboutAppFragment" />
     <fragment
         android:id="@+id/notificationsFragment"
-        android:name="com.lasuak.navigationcontroller.Project1.Fragments.NotificationsFragment"
+        android:name="com.lasuak.navigationcontroller.project1.Fragments.NotificationsFragment"
         android:label="Notifications" />
 
 </navigation>
